@@ -16,18 +16,18 @@ Currency Converter API — это RESTful сервис для конвертац
 
 ### 1. Клонируйте репозиторий
 
-git clone https://github.com/your-username/currency-converter.git
-cd currency-converter
+- git clone https://github.com/your-username/currency-converter.git
+- cd currency-converter
 
 ### 2. Запустите приложение с помощью Docker Compose
 
-docker-compose up --build
+- docker-compose up --build
 
 Приложение будет доступно по адресу: http://localhost:8000
 
 ### 3. Остановите приложение
 
-docker-compose down
+- docker-compose down
 
 ## **Использование**
 
@@ -36,12 +36,13 @@ GET /api/rates/
 
 ## Параметры запроса:
 
-from_currency (str): Валюта исходной суммы (например, USD).
-to_currency (str): Валюта для конвертации (например, RUB).
-amount (float): Сумма для конвертации.
+- from_currency (str): Валюта исходной суммы (например, USD).
+- to_currency (str): Валюта для конвертации (например, RUB).
+- amount (float): Сумма конвертации (например, 1).
 
 ## Пример запроса:
-curl "http://localhost:8000/api/rates/?from_currency=USD&to_currency=RUB&amount=1"
+
+- curl "http://localhost:8000/api/rates/?from_currency=USD&to_currency=RUB&amount=1"
 
 ## Пример ответа:
 {
